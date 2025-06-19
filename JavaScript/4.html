@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- print maths table
+
+    <script>
+        // 11*1=11
+        var tableNo = 16;
+        let i = 1;
+        for (i = 1; i <= 10; i++) {
+            document.write(`<div>
+                ${tableNo}  &Cross; ${i} = ${tableNo * i}
+            </div>`)
+        }
+    </script> -->
+    <!-- <button onclick="dispMsg()">click here</button> -->
+    <!-- <script>
+        function dispMsg() {
+            alert("Hello, We learn JavaScript");
+        }
+    </script> -->
+
+    <!-- <button onclick="UserFunc()">confirm box</button>
+
+    <script>
+        function UserFunc() {
+            var box = confirm("click on any button");
+            if (box == true) {
+                alert("you click on ok")
+            } else {
+                alert("you click on cancel")
+            }
+        }
+    </script>   -->
+
+    <!-- <button onclick="openprompt()">open prompt</button>
+    <script>
+        function openprompt(){
+            var input = prompt("Enter Name;")
+            if (input==""){
+                alert("Enter value")
+            }
+            else{
+                window.open("https://jsonplaceholder.typicode.com/", "_blank")
+            }
+        } -->
+        <script>
+        var link = "https://jsonplaceholder.typicode.com/", clink;
+        function openlink() {
+            clink = window.open(link, "_blank")
+        }
+        function closelink() {
+            clink.window.close()
+        }
+    </script>
+</body>
+
+</html>

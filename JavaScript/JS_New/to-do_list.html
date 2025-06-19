@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;    
+        }
+        .main{
+            padding: 20px;
+            border-radius: 8px;
+            width: 400px;
+        }
+        input {
+            padding: 10px;
+            border: 1px solid;
+            border-radius: 4px;
+            margin-right: 10px;
+            width: 300px;
+        }
+        button {
+            padding: 10px 15px;
+            background: #007bff;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+                }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            }
+        li {
+            background-color: aliceblue;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            }
+       </style>
+</head>
+<body>
+        <div class="main">
+            <h1>To-Do List:</h1>
+            <input type="text" id="todo_input">
+            <button id="add_todo"> Add</button>
+            <ul id="todo_list"></ul>
+        </div>
+
+        <script>
+            function addTodo(){
+            const inputField = document.getElementById('todo_input');
+            const todoText = inputField.value;
+
+            if (todoText) {
+                const li = document.createElement('li');
+                li.textContent = todoText;
+
+                const deleteButton = document.createElement('button');
+                deleteButton.textContent = 'Delete';
+                deleteButton.onclick = function() {
+                    li.remove();
+                };
+
+                li.appendChild(deleteButton);
+                document.getElementById('todo_list').appendChild(li);
+                inputField.value = '';
+            }
+        }
+
+            document.getElementById('add_todo').addEventListener('click', addTodo);
+
+    </script>
+</body>
+</html>

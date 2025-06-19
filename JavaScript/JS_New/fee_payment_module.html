@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fee_payment_module.css">
+    </head>
+<body>
+    <form action="#">
+    <h1>Payment Module</h1>
+    <div class="main">  
+        
+        <div class="detail">
+            <div class="d1">
+                <label>Enter Name:</label><br>
+                <input type="text" class="name">
+            </div>
+            
+            <div class="d1">
+                <label>Total Fees:</label><br>
+                <input type="text" class="t_fees">
+            </div>
+            
+            <div class="d1">
+                <label>Remaining Fees: </label><br>
+                <input type="text" class="r_fees">
+            </div>
+        </div> <!-- detail -->
+        
+        <div class="payment_opt">
+           <label for="">Paid Fees:</label>
+            <div class="payment_opt_1">
+                <input type="radio" name="fees" id="cheque">Cheque
+                <input type="radio" name="fees" id="Online">Online
+                <input type="radio" name="fees" id="Cash">Cash
+            </div> <!-- payment_opt_1 -->
+        </div> <!-- payment_opt -->
+        
+        <div class="side_payment_option">
+
+            <div class="s_payment cheque">
+                <label for="">Cheque No:</label><br>
+                <input type="text" id="cheque_cheque_id">
+                <br>
+                <label for="">Amount:</label><br>
+                <input type="text" id="cheque__amount_id">
+            </div> <!-- cheque -->
+            
+            <div class="s_payment online">
+                <label for="">UPI ID:</label><br>
+                <input type="text" id="online_upi_id">
+                <br>
+                <label for="">Amount:</label><br>
+                <input type="text" id="online_amount_id">
+            </div> <!-- online -->
+
+            <div class="s_payment cash">
+                <label for="">Cash Amount:</label><br>
+                <input type="text" id="cash_amount_id">
+            </div> <!-- cash -->
+        </div> <!-- side_payment_option -->
+
+    </div> <!-- main -->
+    
+    <div class="btn">
+        <button class="convert_btn">Convert to PDF</button>
+    </div> <!-- btn -->
+</form>
+</body>
+</html>

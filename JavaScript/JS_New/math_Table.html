@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #result{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+   To Get Multiplication Table:
+   <input type="text" name="" placeholder="Enter Number" id="any_nmbr">
+   <br>
+   <br>
+   <button onclick="userInput()">Get Table</button>
+    <p id="result"> Table is:</p>
+
+   <script>
+       function userInput(){
+           var num  = parseInt(document.getElementById("any_nmbr").value);           
+           var i = 1;
+           var res = "";
+
+           for(i=1; i <= 10; i++) {
+               res += `<div>
+                ${num}  &Cross; ${i} = ${num * i}
+            </div>`;
+            }
+            document.getElementById('result').innerHTML=res;
+        }
+   </script>
+</body>
+</html>
+
