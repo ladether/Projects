@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.flex_design .setting{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: rgb(187, 224, 236);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content:space-between;
+    gap: 50px;
+    padding-left: 100px;
+}
+
+
+.flex_design .setting img{
+    height: auto;
+    max-width: 100%;
+}
+
+.flex_content{
+    display:block;
+}
+
+.flex_content .text1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-size: 1.5vw;
+    color: rgb(73, 66, 66);
+}
+
+.flex_content .text2{
+    font-size: 1.5vw;
+    font-weight: bolder;
+}
+
+.flex_content .details{
+    font-size: 1vw;
+    color: rgb(160, 146, 146);
+}
+
+.flex_content .flex_btn button{
+    margin-top: 20px;
+    border-style: none;
+    color: rgb(88, 88, 206);
+    background-color: white;
+    font-size: 1.1vw;
+    border-radius: 20px;
+    padding: 12px 12px 12px 12px;
+    font-weight: bold;
+    border-color: white;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.flex_content .flex_btn button:hover{
+    transform: scale(1.2);
+}

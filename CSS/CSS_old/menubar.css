@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* img{
+    width: 20px;
+} */
+/* .header_space{
+    background-color:lightcyan;
+} */
+
+header .topnav{
+    display: flex;
+    align-items: center;
+}
+header .topnav .logo{
+    flex: 0.2
+}
+header .topnav .logo img{
+    width: 30px;
+}
+header .topnav .menubar{
+    flex: 2.5;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+header .topnav .menubar ul{
+    display: flex;
+    align-items: center;
+}
+header .topnav .menubar .search{
+    display: flex;
+}
+header .topnav .menubar img{
+    width: 40px;
+}
+
+header .topnav .loginbar{
+    flex: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 30px;
+    padding-right: 60px;
+}
+header .topnav .loginbar ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+header .topnav .loginbar ul li a{
+    color: black;
+    font-weight: 500;
+    font-size: 17px;
+}
+header .topnav .loginbar ul img{
+    color: blueviolet;
+    width: 30px;
+}
+header .topnav .loginbar .btns{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+header .topnav .loginbar .btns button{
+    padding: 10px 30px;
+    font-size: 11px;
+    color: black;
+    border: none;
+}
+header .topnav .loginbar .btns .btn1{
+    background-color: #2e792e;
+    color: white;
+    border-radius: 20px;
+}
+header .topnav .loginbar .btns .button-2{
+    position: absolute;
+    right: -70px;
+    z-index: -1;
+}
+header .topnav .loginbar .btns .btn2{
+    background-color: #88e788;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap: 50px;
+                justify-items: center;
+                /* background-color: red; */
+                padding: 50px;
+        }
+
+        a {
+            text-decoration: none;  
+            font-size: 40px;
+            color: black;
+        }
+
+        .link::after {
+            content: " ";
+            height: 10px;
+            width: 100%;
+            display: block;
+            background-color: red;
+            transition:1s ease;
+        }
+
+        .link1::after{
+            transform: scale(0);
+        }
+        .link1:hover::after{
+            transform: scale(1);
+        }
+
+        .link2::after{
+            transform: scaleX(0);
+        }
+        .link2:hover::after{
+            transform: scaleX(1);
+        }
+
+        .link3::after{
+            transform: scaleY(0);
+        }
+        .link3:hover::after{
+            transform: scaleY(1);
+        }
+
+
+        .link4::after{
+            transform: scaleY(0);
+            transform-origin: 100% 0%;
+        }
+        .link4:hover::after{
+            transform: scaleY(1);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div>
+            <a href="" class="link link1">Click Here</a>
+        </div>
+        <div>
+            <a href="" class="link link2">Click Here</a>
+        </div>
+        <div>
+            <a href="" class="link link3">Click Here</a>
+        </div>
+        <div>
+            <a href="" class="link link4">Click Here</a>
+        </div>
+    </div>
+</body>
+</html>

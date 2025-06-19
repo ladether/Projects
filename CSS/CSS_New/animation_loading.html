@@ -1,0 +1,90 @@
+<!-- HTML: <div class="loader"></div>
+.loader {
+  width: 85px;
+  height: 50px;
+  --g1:conic-gradient(from  90deg at left   3px top   3px,#0000 90deg,#fff 0);
+  --g2:conic-gradient(from -90deg at bottom 3px right 3px,#0000 90deg,#fff 0);
+  background:var(--g1),var(--g1),var(--g1), var(--g2),var(--g2),var(--g2);
+  background-position: left,center,right;
+  background-repeat: no-repeat;
+  animation: l9 1s infinite;
+}
+@keyframes l9 {
+  0%   {background-size:25px 50% ,25px 50% ,25px 50%}
+  25%  {background-size:25px 100%,25px 50% ,25px 50%}
+  50%  {background-size:25px 50% ,25px 100%,25px 50%}
+  75%  {background-size:25px 50% ,25px 50% ,25px 100%}
+  100% {background-size:25px 50% ,25px 50% ,25px 50%}
+} -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(138, 81, 125);
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            margin:300px auto;
+        }
+        .maindiv{
+            height:auto;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            /* background-color: aqua; */
+            padding: 20px;
+        }
+
+        .sqr{
+            height: 50px;
+            width: 50px;
+            border: 4px solid rgb(233, 225, 230);
+            animation-name: loading;
+            /* animation-direction: linear; */
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;        
+        }
+        .sqr:nth-child(1){
+            animation-delay: 0.5s;
+
+        }
+        .sqr:nth-child(2){
+            animation-delay: 1s;
+        }
+        .sqr:nth-child(3){
+            animation-delay: 1.5s;
+        }
+        .sqr:nth-child(4){
+            animation-delay: 2s;
+        }
+
+        @keyframes loading {
+            0%{
+                transform:scaleY(0);
+            }
+            50%{
+                transform:scaleY(1.5);
+            }
+            100%{
+                transform: scaleY(1);
+            }
+            }
+               
+            </style>
+</head>
+<body>
+   <div class="maindiv">
+            <div class="sqr"></div>
+            <div class="sqr"></div>
+            <div class="sqr"></div>
+            <div class="sqr"></div>    
+</div> 
+</body>
+</html>

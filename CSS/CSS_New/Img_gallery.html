@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .bike_gallrey{
+            display: grid;
+            padding: 30px;
+            gap: 30px;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        img{
+            height: auto;
+            max-width: 100%;
+            vertical-align: middle;
+            transition: 1.5s ease;
+        }
+        .img3{
+            grid-column: 2;
+            grid-row: 1 / span 2;
+        }
+        img:hover{
+            /* max-width: 105%; */
+            transform: rotate(360deg);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="bike_gallrey">
+        <div class="img1">
+            <img src="/img/bike-bullet-royal-enfield.jpg" alt="">
+        </div>
+        <div class="img2">
+            <img src="img/HD-wallpaper-royal-enfield-bullet-mountain-sky-sun-sunshine.jpg" alt="">
+        </div>
+        <div class="img3">
+            <img src="img/ead10c620e648a212a76a0f7648c7091.jpg" alt="">
+        </div>
+        <div class="img4">
+            <img src="img/royal-enfield-kx-3600x2400-18681.jpg" alt="">
+        </div>
+        <div class="img5"> 
+            <img src="img/pexels-phoenixprithivi-4297509.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

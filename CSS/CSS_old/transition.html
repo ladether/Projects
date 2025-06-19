@@ -1,0 +1,151 @@
+<!-- <!-- <!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* transition means smooth move */
+        .mydiv {
+            height: 100px;
+            width: 100px;
+            background-color: chocolate;
+            margin: 100px auto;
+            /* transition-duration: 0.5s;
+            transition-property: all;
+            transition-timing-function: ease; */
+            /* transition-delay: 1s; */
+            /* transition: 0.5s all ease-in; */
+            /* transition: 0.5s ease-out all; */
+            /* transition: 0.5s ease-in-out; */
+            /* transition: linear 0.5s; */
+            transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .mydiv:hover {
+            height: 150px;
+            width: 150px;
+            /* transition-duration: 0.5s;
+            transition-property: all;
+            transition-timing-function: ease; */
+        }
+
+        .btn {
+            padding: 10px 30px;
+            background-color: blue;
+            color: white;
+            border: 2px dashed red;
+            transition: 0.5s ease;
+        }
+
+        .btn:hover {
+            background-color: transparent;
+            border: 2px solid blue;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv"></div>
+
+    <div style="text-align: center;">
+        <button class="btn">click here</button>
+    </div>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv {
+            height: 100px;
+            width: 100px;
+            background-color: teal;
+            margin: 100px auto;
+            transition: 0.5s ease;
+        }
+
+        .mydiv:hover {
+            /* transform: rotate(-360deg); */
+            /* transform: rotateX(180deg); */
+            /* transform: rotateY(180deg); */
+            transform: rotateX(60deg) rotateY(120deg) rotateZ(40deg);
+            /* transform: rotate3d(1, 1, 1, 45deg); */
+            /* rotate: -50deg; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv">My div</div>
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv {
+            height: 100px;
+            width: 100px;
+            background-color: teal;
+            margin: 100px auto;
+            transition: 0.5s ease;
+        }
+
+        .mydiv:hover {
+            /* transform: translate(20px, -20px); */
+            /* translate: 40px; */
+            /* transform: translateX(30px); */
+            /* transform: translateY(50px); */
+            /* transform: translateZ(20px); */
+            transform: translate3d(20px, 40px, 30px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv">My div</div>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv {
+            height: 200px;
+            width: 200px;
+            background-color: cadetblue;
+            margin: 100px auto;
+            /* scaleX() skewY() skewX() scaleY() translateX() translateY() */
+            transform: matrix(1, 0, 0, 1, 0, 0);
+            /* transform: scaleX() scaleY(); */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv">my div</div>
+</body>
+
+</html>
